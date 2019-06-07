@@ -1,0 +1,15 @@
+{
+  "name": "ovalcms",
+  "version": "1.0.0",
+  "description": "OvalCMS API engine",
+  "license": "MIT",
+  "repository": "ovalcms",
+  "main": "index.js",
+  "keywords": [
+    "api",
+    "cms",
+    "headless",
+    "oval",
+    "ovalcms"
+  ]
+}
