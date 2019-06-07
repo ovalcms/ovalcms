@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "OvalCMS API engine",
   "license": "MIT",
-  "repository": "ovalcms",
+   "repository": {
+    "type": "git",
+    "url": "git://github.com/ovalcms/ovalcms.git"
+  },
   "main": "index.js",
   "keywords": [
     "api",
