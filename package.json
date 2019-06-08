@@ -1,9 +1,9 @@
 {
   "name": "ovalcms",
-  "version": "1.0.0",
+  "version": "2.0.2",
   "description": "OvalCMS API engine",
   "license": "MIT",
-   "repository": {
+  "repository": {
     "type": "git",
     "url": "git://github.com/ovalcms/ovalcms.git"
   },
@@ -14,5 +14,9 @@
     "headless",
     "oval",
     "ovalcms"
-  ]
+  ],
+  "dependencies": {
+    "ky": "^0.11.1",
+    "ky-universal": "^0.2.1"
+  }
 }

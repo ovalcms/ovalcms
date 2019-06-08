@@ -1,0 +1,13 @@
+# dependencies
+/node_modules
+
+# IDE - VSCode
+.vscode/*
+
+# misc
+package-lock.json
+npm-debug.log
+
+# System Files
+.DS_Store
+Thumbs.db
