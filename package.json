@@ -1,6 +1,6 @@
 {
   "name": "ovalcms",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "OvalCMS API engine",
   "license": "MIT",
   "repository": {
@@ -11,7 +11,9 @@
   "keywords": [
     "api",
     "cms",
+    "content",
     "headless",
+    "first",
     "oval",
     "ovalcms"
   ],
