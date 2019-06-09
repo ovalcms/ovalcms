@@ -1,12 +1,25 @@
 'use strict';
-const ky = require('ky-universal');
+import KY from 'ky-universal'
 
-function OvalCMS(client_token) {
-  if (typeof client_token !== "string") {
-    throw new TypeError("Must be a string!");
+class OvalCMS {
+  constructor() {
   }
 
-  return await ky.get('http://www.ovalcms.com/api/content/' + client_token).json();
-};
+  async getContent(contentOptions) {
+    let clientWeb = KY.extend({
+      prefixUrl: 'http://www.ovalcms.com'
+      , headers: {
+        Authorization: `Bearer ${contentOptions.authToken}`
+      }
+    });
 
-module.exports = OvalCMS;
+    return await clientWeb.get('api/content/' + contentOptions.pageToken).json();
+  }
+}
+
+export default (options) => {
+  // Create new OvalCMS instance
+  const ovalcms = new OvalCMS()
+  let f = ovalcms.getContent(options);
+  return f;
+}
