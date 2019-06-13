@@ -7,7 +7,7 @@ class OvalCMS {
 
   async getContent(contentOptions) {
     let clientWeb = KY.extend({
-      prefixUrl: 'http://www.ovalcms.com'
+      prefixUrl: 'https://www.ovalcms.com'
       , headers: {
         Authorization: `Bearer ${contentOptions.authToken}`
       }
